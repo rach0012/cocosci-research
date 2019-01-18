@@ -28,6 +28,10 @@ app.set('view engine', 'html');
 
 // Routing
 app.get('/', function(request, response) {
+    response.render('verify.html');
+});
+
+app.get('/index', function(request, response) {
     response.render('index.html');
 });
 
